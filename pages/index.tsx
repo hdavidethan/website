@@ -12,38 +12,43 @@ export default function Home() {
       </Head>
       <main className="bg-customBlack h-screen text-customWhite">
         <div className="flex flex-column flex-wrap h-screen justify-center">
-          <div className="flex justify-center items-end flex-row gap-10">
-            <div className="flex flex-column flex-wrap text-right w-full gap-1">
-              <div className="profile-image-container mb-10 w-full flex justify-end">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/profile.png" alt="profile image" />
-              </div>
-              <p className="w-full">GitHub</p>
-              <p className="w-full">LinkedIn</p>
-              <p className="w-full">Email</p>
+          <div className="flex flex-wrap gap-x-10 max-sm:gap-x-5 justify-center self-end">
+            <div className="profile-image-container mb-10 flex justify-end lg:w-5/12 md:w-5/12 sm:w-8/12">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/profile.png"
+                alt="profile image"
+                className="object-contain"
+              />
             </div>
-            <div className="flex flex-column flex-wrap gap-1">
-              <div className="flex flex-column flex-wrap mb-10">
-                <p className="w-full text-3xl font-light">
-                  Hello, world! I&apos;m
-                </p>
-                <p className="w-full text-5xl text-customOrange font-bold my-3">
-                  David Hwang
-                </p>
-                <p className="w-full text-3xl font-light">
-                  I&apos;m currently a senior studying
-                </p>
-                <p className="w-full text-3xl font-bold text-customOrange">
-                  Electrical &amp; Computer Engineering
-                </p>
-                <p className="w-full text-3xl font-light">
-                  at{" "}
-                  <span className="text-customOrange font-bold">
-                    Carnegie Mellon Univeristy
-                  </span>
-                </p>
-              </div>
-              <p className="w-full">
+            <div className="grow text-left max-sm:text-center max-sm:px-5 mb-10">
+              <p className="w-full text-3xl max-sm:text-xl font-light">
+                Hello, world! I&apos;m
+              </p>
+              <p className="w-full text-5xl max-sm:text-4xl text-customOrange font-bold my-3">
+                David Hwang
+              </p>
+              <p className="w-full text-3xl max-sm:text-xl font-light">
+                I&apos;m currently a senior studying
+              </p>
+              <p className="w-full text-3xl max-sm:text-xl font-bold text-customOrange">
+                Electrical &amp; Computer Engineering
+              </p>
+              <p className="w-full text-3xl max-sm:text-xl font-light">
+                at{" "}
+                <span className="text-customOrange font-bold">
+                  Carnegie Mellon Univeristy
+                </span>
+              </p>
+            </div>
+            <div className="basis-full h-0" />
+            <div className="w-5/12 max-sm:w-4/12 text-right">
+              <p>GitHub</p>
+              <p>LinkedIn</p>
+              <p>Email</p>
+            </div>
+            <div className="grow">
+              <p>
                 @hdavidethan{" "}
                 <a
                   className="inline-flex align-top text-[1.25rem] cursor-pointer"
@@ -53,7 +58,7 @@ export default function Home() {
                   <OpenIn className="h-[1.25rem]" />
                 </a>
               </p>
-              <p className="w-full">
+              <p>
                 @h-davidethan{" "}
                 <a
                   className="material-symbols-outlined inline-flex align-top text-[1.25rem] cursor-pointer"
@@ -63,7 +68,7 @@ export default function Home() {
                   <OpenIn className="h-[1.25rem]" />
                 </a>
               </p>
-              <p className="w-full">
+              <p>
                 hdavidethan@gmail.com{" "}
                 <a
                   className="material-symbols-outlined inline-flex align-top text-[1.25rem] cursor-pointer"
@@ -75,11 +80,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="m-10">
+          <div className="m-10 w-full flex justify-center">
             <a
               className="border-2 border-solid border-customOrange 
             text-customOrange py-2 px-3 rounded-md hover:bg-customOrange
-            hover:text-customWhite transition-colors cursor-pointer"
+            hover:text-customWhite transition-colors cursor-pointer h-min"
               href="/resume.pdf"
               target="_blank"
             >
