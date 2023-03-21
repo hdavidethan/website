@@ -1,3 +1,4 @@
+import OpenIn from "@/components/OpenIn";
 import Head from "next/head";
 
 export default function Home() {
@@ -45,11 +46,11 @@ export default function Home() {
               <p className="w-full">
                 @hdavidethan{" "}
                 <a
-                  className="material-symbols-outlined inline-flex align-top text-[1.25rem] cursor-pointer"
+                  className="inline-flex align-top text-[1.25rem] cursor-pointer"
                   href="https://github.com/hdavidethan"
                   target="_blank"
                 >
-                  {"\ue89e"}
+                  <OpenIn className="h-[1.25rem]" />
                 </a>
               </p>
               <p className="w-full">
@@ -59,7 +60,7 @@ export default function Home() {
                   href="https://linkedin.com/in/h-davidethan"
                   target="_blank"
                 >
-                  {"\ue89e"}
+                  <OpenIn className="h-[1.25rem]" />
                 </a>
               </p>
               <p className="w-full">
@@ -69,7 +70,7 @@ export default function Home() {
                   href="mailto:hdavidethan@gmail.com"
                   target="_blank"
                 >
-                  {"\ue89e"}
+                  <OpenIn className="h-[1.25rem]" />
                 </a>
               </p>
             </div>
