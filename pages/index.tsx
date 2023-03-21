@@ -37,7 +37,7 @@ export default function Home() {
               <p className="w-full text-3xl max-sm:text-xl font-light">
                 at{" "}
                 <span className="text-customOrange font-bold">
-                  Carnegie Mellon Univeristy
+                  Carnegie Mellon University
                 </span>
               </p>
             </div>
