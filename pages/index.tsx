@@ -18,7 +18,7 @@ export default function Home() {
               <img
                 src="/profile.png"
                 alt="profile image"
-                className="object-contain max-sm:rounded-full"
+                className="object-contain rounded-xl max-sm:rounded-full max-sm:border-4 max-sm:border-customOrange max-sm:p-1"
               />
             </div>
             <div className="grow text-left max-sm:text-center max-sm:px-5 mb-10">
