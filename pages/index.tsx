@@ -29,7 +29,7 @@ export default function Home() {
                 David Hwang
               </p>
               <p className="w-full text-3xl max-sm:text-xl font-light">
-                I&apos;m currently a senior studying
+                I&apos;m an incoming master&apos;s student studying
               </p>
               <p className="w-full text-3xl max-sm:text-xl font-bold text-customOrange">
                 Electrical &amp; Computer Engineering
@@ -85,7 +85,7 @@ export default function Home() {
               className="border-2 border-solid border-customOrange 
             text-customOrange py-2 px-3 rounded-md hover:bg-customOrange
             hover:text-customWhite transition-colors cursor-pointer h-min"
-              href="/resume.pdf"
+              href="/resume.pdf?v=202305"
               target="_blank"
             >
               Resume PDF
